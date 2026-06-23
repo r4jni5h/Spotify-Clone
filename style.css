@@ -151,12 +151,16 @@ a {
 }
 
 .card{
-    background-color: #232323;
+    /* background-color: #232323; */
     width: 150px;
     border-radius: 0.5rem; 
     padding: 1rem;
     margin-left: 2rem;
     margin-top: 1.5rem;
+}
+.card:hover{
+    background-color: #232323;
+
 }
 
 .cards-container {
@@ -192,4 +196,104 @@ a {
     border-top: 1px solid white;
     opacity: 0.4;
 
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .player {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .player-control-icon {
+    height: 1rem;
+    margin-right: 1.7rem;
+    opacity: 0.7;
+    
+ }
+
+  .player-control-icon:hover {
+    opacity: 1;
+ }
+
+ .progress-bar {
+    width: 350px;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+ }
+
+ .progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+ }
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin: -6px;
+}
+
+ .album {
+    width: 25%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+ }
+
+ .album img{
+    height: 3.2rem;
+    border-radius: 5px;
+    margin-left: 20px;
+ }
+
+ .album-info {
+    width: 30%;
+    padding-top: 2px;
+    line-height: 5px;
+ }
+
+.album-info .album-name{
+    font-size: 0.75rem;
+    font-weight: 500;
+ }
+
+ .album-info .album-singer-name{
+    font-size: 0.60rem;
+ }
+
+ .album-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  .album-icons img{
+    height: 2rem;
+  }
+
+.controls {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+ }
+
+ .controls img{
+    height: 2.25rem;
+ }
+
+.b-image {
+    height: 0.2rem;
 }
